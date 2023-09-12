@@ -1,22 +1,17 @@
 import './App.css';
 import React from 'react';
-import ComponentC from './Components/ComponentC';
-import CounterOne from './Components/CounterOne';
-export const UserContex = React.createContext()
-
+import CounterTwo from './Components/CounterTwo';
+import InputRef from './Components/InputRef';
+import HookTimer from './Components/HookTimer';
+import DocTitleone from './Components/DocTitleone';
+import DocTitlTwo from './Components/DocTitleTwo';
 
 function App() {
   return (
     <div className="App">
-      <CounterOne></CounterOne>
-      {/* <UserContex.Provider value ={'almas'}> */}
-      {/* <ComponentC></ComponentC> */}
-      {/* </UserContex.Provider> */}
-      {/* <DataFetching></DataFetching> */}
-      {/* <IntervalHookCounter></IntervalHookCounter> */}
-      {/* <Counter></Counter> */}
-      {/* <MousePosition></MousePosition> */}
-    
+      <DocTitleone></DocTitleone>
+      <DocTitlTwo/>
+      {/* <HookTimer/> */}
     </div>
   );
 }

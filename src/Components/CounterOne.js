@@ -1,20 +1,21 @@
 import React,{useReducer} from 'react'
-const initialState = 0
+
+
+function CounterOne() {
+  const initialState = 0
 const reducer =(state,action)=>{
   switch(action){
     case 'increment': 
     return state + 1
     case 'decrement':
-      return state -1
+      return state - 1
       case 'reset' :
-        return 0
+        return initialState
         default :
         return state
   }
 
 }
-
-function CounterOne() {
  const [count,disptach] = useReducer(reducer,initialState)
   return (
     <>
@@ -22,6 +23,7 @@ function CounterOne() {
     <button onClick={()=>disptach('increment')} >increment</button>
     <button onClick={()=>disptach('decrement')} >decrement</button>
     <button onClick={()=>disptach('reset')} >reset</button>
+    
 
     </>
   )
